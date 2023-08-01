@@ -19,7 +19,7 @@ export const request = async ({ path, method = 'GET', body }: IRequest) => {
 		url: `https://tiktok-video-no-watermark2.p.rapidapi.com/${path}`,
 		method,
 		headers: {
-			'X-RapidAPI-Key': '71c851303amshef43f231e7589fcp1c29b7jsn812d1f937e0a',
+			'X-RapidAPI-Key': '6e528b9265msh04caae5bebbb93ap18d837jsn900d868939b8',
 			'X-RapidAPI-Host': 'tiktok-video-no-watermark2.p.rapidapi.com'
 		}
 	};
@@ -27,7 +27,6 @@ export const request = async ({ path, method = 'GET', body }: IRequest) => {
 
 	try {
 		const response = await axios.request(options);
-		debugger
 		const result = await response.data
 		return result
 	} catch (error) {

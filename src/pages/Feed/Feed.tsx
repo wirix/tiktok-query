@@ -10,7 +10,7 @@ export const Feed = () => {
 
 	return (
 		<div>
-			{feed.map((item) => <FeedContent {...item} />)}
+			{feed.map(item => <FeedContent key={item.aweme_id} {...item} />)}
 		</div>
 	);
 }
